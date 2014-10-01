@@ -1,0 +1,2 @@
+languaje: java
+script: mvn test
