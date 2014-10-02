@@ -39,7 +39,10 @@ public class FractionTest {
     
     @Test
     public void testInverse() {
-        assertEquals(new Fraction(5, 2), this.fraction.inverse());
+        Fraction inversaReal = new Fraction(5, 2);
+        Fraction inversa = this.fraction.inverse();
+        assertEquals(inversaReal.getNumerator(), inversa.getNumerator());
+        assertEquals(inversaReal.getDenominator(), inversa.getDenominator());
     }
     
     @Test
