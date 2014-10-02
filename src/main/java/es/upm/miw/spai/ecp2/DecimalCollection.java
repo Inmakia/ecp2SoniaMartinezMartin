@@ -36,7 +36,16 @@ public class DecimalCollection {
     }
     
     public double range(){
-    	return 5.0-1.7;
+    	return this.higher() - this.lower();
+    }
+
+    private double lower() {
+        double lower = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < lower)
+                lower = item;
+        }
+        return lower;
     }
 
 }
