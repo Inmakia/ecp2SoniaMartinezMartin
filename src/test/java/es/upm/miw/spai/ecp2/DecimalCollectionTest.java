@@ -12,9 +12,9 @@ public class DecimalCollectionTest {
     @Before
     public void dataDecimalCollection() {
         collection = new DecimalCollection();
-        collection.add(1);
-        collection.add(5);
-        collection.add(2);
+        collection.add(1.7);
+        collection.add(5.0);
+        collection.add(2.3);
     }
 
     @Test
@@ -24,12 +24,12 @@ public class DecimalCollectionTest {
 
     @Test
     public void testSum() {
-        assertEquals(8, this.collection.sum(), 10e-1);
+        assertEquals(9, this.collection.sum(), 10e-15);
     }
 
     @Test
     public void testHigher() {
-        assertEquals(5, this.collection.higher(), 10e-1);
+        assertEquals(5.0, this.collection.higher(), 10e-15);
     }
 
 }

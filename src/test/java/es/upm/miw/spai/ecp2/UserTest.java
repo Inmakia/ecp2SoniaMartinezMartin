@@ -11,24 +11,24 @@ public class UserTest {
 
     @Before
     public void dataUser() {
-        user = new User(23, "Perico", "el de los palotes");
+        user = new User(23, "Mickey", "Mouse");
     }
 
     @Test
     public void testUser() {
         assertEquals(23, user.getNumber());
-        assertEquals("Perico", user.getName());
-        assertEquals("El de los palotes", user.getFamilyName());
+        assertEquals("Mickey", user.getName());
+        assertEquals("Mouse", user.getFamilyName());
     }
 
     @Test
     public void testFullName() {
-        assertEquals("Perico El de los palotes", user.fullName());
+        assertEquals("Mickey Mouse", user.fullName());
     }
 
     @Test
     public void testInitials() {
-        assertEquals("P.", user.initials());
+        assertEquals("M.", user.initials());
     }
 
 }
