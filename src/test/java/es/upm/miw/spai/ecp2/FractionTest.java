@@ -33,8 +33,8 @@ public class FractionTest {
     }
     
     @Test
-    public void testEsEquivalente(){
-        assertTrue(this.fraction.EsEquivalente(new Fraction(4,10)));
+    public void testIsEquivalente(){
+        assertTrue(this.fraction.isEquivalente(new Fraction(4,10)));
     }
 
 }
