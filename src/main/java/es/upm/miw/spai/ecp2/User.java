@@ -1,5 +1,7 @@
 package es.upm.miw.spai.ecp2;
 
+import javax.swing.Spring;
+
 public class User {
     private int number;
 
@@ -39,7 +41,8 @@ public class User {
     }
     
     public String formalName(){
-    	return "M. Mouse";
+        String letra = this.name.substring(0, 1);
+    	return letra + "." + " " + this.familyName;
     }
     
 }
