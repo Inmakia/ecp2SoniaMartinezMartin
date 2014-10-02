@@ -31,5 +31,10 @@ public class DecimalCollectionTest {
     public void testHigher() {
         assertEquals(5.0, this.collection.higher(), 10e-15);
     }
+    
+    @Test
+    public void testRange() {
+        assertEquals(3.3, this.collection.range(), 10e-15);
+    }
 
 }

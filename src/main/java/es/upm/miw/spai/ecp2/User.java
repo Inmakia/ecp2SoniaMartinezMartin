@@ -37,4 +37,5 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }
+    
 }

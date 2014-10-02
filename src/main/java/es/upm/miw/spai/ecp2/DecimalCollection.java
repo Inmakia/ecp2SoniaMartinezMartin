@@ -34,5 +34,9 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double range(){
+    	return 5.0-1.7;
+    }
 
 }
