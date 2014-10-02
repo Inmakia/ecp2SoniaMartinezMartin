@@ -47,9 +47,10 @@ public class FractionTest {
     
     @Test
     public void testDivide() {
-        Fraction operador = new Fraction(3, 4);
-        Fraction resultado = new Fraction(8, 15);
-        assertEquals(resultado, this.fraction.divide(operador));
+        Fraction resultadoReal = new Fraction(8, 15);
+        Fraction resultado = this.fraction.divide(new Fraction(3, 4));
+        assertEquals(resultadoReal.getNumerator(), resultado.getNumerator());
+        assertEquals(resultadoReal.getDenominator(), resultado.getDenominator());
     }
 
 }
