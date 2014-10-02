@@ -70,8 +70,8 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction operador) {
-        // TODO Auto-generated method stub
-        return null;
+        operador.inverse();
+        return new Fraction (this.numerator * operador.numerator, this.denominator * operador.denominator);
     }
 
 }
