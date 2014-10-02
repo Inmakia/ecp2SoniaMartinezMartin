@@ -61,8 +61,8 @@ public class Fraction {
     }
 
     public boolean isEquivalente(Fraction fraction) {
-
-        return false;
+        return this.numerator * fraction.getDenominator() == 
+                this.denominator * fraction.getNumerator();
     }
 
     public Fraction inverse() {
@@ -71,7 +71,8 @@ public class Fraction {
 
     public Fraction divide(Fraction operador) {
         operador.inverse();
-        return new Fraction (this.numerator * operador.numerator, this.denominator * operador.denominator);
+        return new Fraction(this.numerator * operador.numerator, this.denominator
+                * operador.denominator);
     }
 
 }
