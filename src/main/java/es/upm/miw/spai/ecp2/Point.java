@@ -43,8 +43,7 @@ public class Point {
     }
 
     public Point midPoint(Point point) {
-        return this;
-        
+    	return new Point(((this.x+point.x)/2), ((this.y+point.y)/2));
     }
     
 }

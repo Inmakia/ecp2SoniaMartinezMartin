@@ -50,9 +50,10 @@ public class PointTest {
     
     @Test
     public void testMidPoint(){
-        this.pt.midPoint(new Point(2,3));
-        assertEquals(2, pt.getX());
-        assertEquals(3, pt.getY());
+        Point pt2 = new Point();
+    	pt2 = this.pt.midPoint(new Point(2,3));
+        assertEquals(2, pt2.getX());
+        assertEquals(3, pt2.getY());
     }
 
 
