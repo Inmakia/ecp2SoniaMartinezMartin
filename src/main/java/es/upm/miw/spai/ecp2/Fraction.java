@@ -70,8 +70,8 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction operador) {
-        operador.inverse();
-        return new Fraction (this.numerator * operador.numerator, this.denominator * operador.denominator);
+        Fraction operador1 = operador.inverse();
+        return new Fraction (this.numerator * operador1.numerator, this.denominator * operador1.denominator);
     }
 
 }
