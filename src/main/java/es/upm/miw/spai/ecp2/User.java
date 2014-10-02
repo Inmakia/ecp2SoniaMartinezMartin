@@ -38,4 +38,8 @@ public class User {
         return this.name.substring(0, 1) + ".";
     }
     
+    public String formalName(){
+    	return "M. Mouse";
+    }
+    
 }

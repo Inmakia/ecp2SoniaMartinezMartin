@@ -30,5 +30,10 @@ public class UserTest {
     public void testInitials() {
         assertEquals("M.", user.initials());
     }
+    
+    @Test
+    public void testFormalName() {
+        assertEquals("M. Mouse", user.formalName());
+    }
 
 }
