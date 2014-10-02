@@ -66,8 +66,7 @@ public class Fraction {
     }
 
     public Fraction inverse() {
-        // TODO Auto-generated method stub
-        return null;
+        return new Fraction(this.denominator, this.numerator);
     }
 
     public Fraction divide(Fraction operador) {
