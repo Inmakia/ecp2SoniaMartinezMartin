@@ -41,5 +41,12 @@ public class FractionTest {
     public void testInverse() {
         assertEquals(new Fraction(5, 2), this.fraction.inverse());
     }
+    
+    @Test
+    public void testDivide() {
+        Fraction operador = new Fraction(3, 4);
+        Fraction resultado = new Fraction(8, 15);
+        assertEquals(resultado, this.fraction.divide(operador));
+    }
 
 }

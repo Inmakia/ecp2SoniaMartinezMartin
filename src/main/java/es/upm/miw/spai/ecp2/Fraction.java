@@ -70,4 +70,9 @@ public class Fraction {
         return null;
     }
 
+    public Fraction divide(Fraction operador) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }
