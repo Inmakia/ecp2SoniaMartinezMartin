@@ -65,4 +65,9 @@ public class Fraction {
         return false;
     }
 
+    public Fraction inverse() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

@@ -36,5 +36,10 @@ public class FractionTest {
     public void testIsEquivalente(){
         assertTrue(this.fraction.isEquivalente(new Fraction(4,10)));
     }
+    
+    @Test
+    public void testInverse() {
+        assertEquals(new Fraction(5, 2), this.fraction.inverse());
+    }
 
 }
